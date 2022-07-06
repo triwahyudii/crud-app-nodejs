@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:4-xenial
+    ports: 
+    - 27017:27017
+    networks:
+      - node_network
+
+
+networks:
+  node_network:
+      name: node_network

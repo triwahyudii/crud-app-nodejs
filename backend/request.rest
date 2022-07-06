@@ -1,0 +1,27 @@
+GET http://localhost:4000/users
+
+###
+GET http://localhost:4000/users/62c1aef3f2acf73268036d26
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "name": "Selly Swan",
+    "email": "selly@gmail.com",
+    "gender": "Female"
+}
+
+###
+PATCH http://localhost:4000/users/62c1aef3f2acf73268036d26
+Content-Type: application/json
+
+{
+    "name": "Kevin Powell",
+    "email": "kevin@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:4000/users/62c1aef3f2acf73268036d26
